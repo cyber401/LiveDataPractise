@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">LiveDataPractise</string>
-    <string name="displayNumber">loading</string>
+    <string name="displayNumber">0</string>
     <string name="button">Button</string>
 </resources>
