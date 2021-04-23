@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LiveDataPractise</string>
+    <string name="displayNumber">loading</string>
+    <string name="button">Button</string>
+</resources>
