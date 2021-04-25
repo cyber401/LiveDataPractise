@@ -16,12 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         viewModel = ViewModelProvider(this).get(LiveDataPractiseViewModel::class.java)
+        binding.masterViewModel = viewModel
         viewModel.value().observe(this, Observer {
             binding.displayNumber.text = it.toString()
         })
-        binding.button.setOnClickListener {
-            viewModel.numberIncrement()
-        }
-
     }
 }
